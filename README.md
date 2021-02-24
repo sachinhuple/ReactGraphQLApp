@@ -3,6 +3,7 @@ Sample learning assignment using ReactJS, GraphQL, Mongoose
 
 # Project divided into client and server
 1 movielib_client => Client
+
 2 movielib_server => Server
 
 # Installation
