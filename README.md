@@ -1,2 +1,2 @@
 # ReactGraphQLApp
-Sample learning assignment using ReactJS, GraphQL, Mongooose
+Sample learning assignment using ReactJS, GraphQL, Mongoose
