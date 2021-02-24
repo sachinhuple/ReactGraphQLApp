@@ -1,0 +1,40 @@
+Arguments: 
+  /snap/node/3292/bin/node /snap/node/3292/bin/yarn.js config get registry
+
+PATH: 
+  /home/sachin/applications/anaconda_py3/anaconda3/condabin:/home/sachin/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sachin/bin:/home/sachin/applications/java/jdk-8u60-linux-x64/jdk1.8.0_60/bin:/home/sachin/applications/Android/Sdk/tools:/home/sachin/applications/Android/Sdk/tools/bin:/home/sachin/applications/Android/Sdk/emulator:/home/sachin/applications/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.19.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, write
+      at writeSync (fs.js:679:3)
+      at SyncWriteStream._write (internal/fs/sync_write_stream.js:24:3)
+      at doWrite (_stream_writable.js:403:12)
+      at writeOrBuffer (_stream_writable.js:387:5)
+      at SyncWriteStream.Writable.write (_stream_writable.js:318:11)
+      at ConsoleReporter._log (/snap/node/3292/lib/cli.js:96770:17)
+      at ConsoleReporter.log (/snap/node/3292/lib/cli.js:96758:10)
+      at get (/snap/node/3292/lib/cli.js:87536:14)
+      at Object.<anonymous> (/snap/node/3292/lib/cli.js:25940:25)
+      at Generator.next (<anonymous>)
+
+npm manifest: 
+  {
+    "name": "movie-library",
+    "version": "0.1.0",
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

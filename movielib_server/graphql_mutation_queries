@@ -1,0 +1,92 @@
+# insert languages
+mutation {
+  createLanguage(languageInput: {
+    name: "Marathi"})
+  {
+    _id
+    name
+  }
+}
+
+# list languages
+
+  langs{
+    _id
+    name
+  }
+}
+///////////////////
+# insert Genre
+
+mutation {
+  createGenre(genreInput: {
+    type: "Thriller"})
+  {
+    _id
+    type
+  }
+}
+# list genres
+{
+genres{
+  _id
+  type
+}
+}
+///////////////////////////////////////
+# movies Mutation
+mutation {
+  createMovie(movieInput: {
+    name: "Speed",
+    genre:"91977752f3a64049a30703c280cf2bef",
+    year:2014,
+    language:"844222ec9bdd4f40a214c9eddfb18fad",
+    image:"http://tiny.cc/23eotz"})
+  {
+    _id
+    name
+    year
+    image
+  }
+}
+
+# movies list
+{
+  movies{
+    _id
+    name
+    genre{
+      _id
+      type
+
+    }
+    language{
+      _id
+      name
+    }
+  }
+}
+
+
+//////////////////////////////////////
+filterMovies
+
+query($genre: String, $language: String){
+  filterMovies(genre:$genre, lang:$language){
+  name
+  year
+  image
+  language{name}
+  genre{type}
+}
+
+}
+
+variables:
+{
+  "genre": "8e460abdabf44e39a49a7b29ce0333f2",
+  "language": "541085938ce04807a2c183f2c418873f"
+}
+
+
+/////////////////////////////////
