@@ -22,7 +22,7 @@ if (error) return `Error! ${error.message}`;
        console.log("handler ",e)
        props.onselect(e.value)
      }}
-     />,
+     />
 
      </div>
    </>

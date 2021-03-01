@@ -68,9 +68,16 @@ module.exports = {
 
   filterMovies: (args) => {
     console.log(args);
-    return Movie.find({genre: args.genre}).populate('language').populate('genre').then(movies => {
-        return movies
-  })},
+    if (args.genre===""){
+      return Movie.find().populate('language').populate('genre').then(movies => {
+          return movies})
+
+    }else {
+      return Movie.find({genre: args.genre}).populate('language').populate('genre').then(movies => {
+          return movies})
+    }
+
+  },
 
 
 

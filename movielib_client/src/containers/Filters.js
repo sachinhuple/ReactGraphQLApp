@@ -9,20 +9,3 @@ export const GENRE = gql`
     }
   }
 `;
-
-
-export default function Filters(){
-  const { loading, error, data } = useQuery(GENRE)
-  if (loading) return 'Loading...';
-  if (error) return `Error! ${error.message}`;
-    return (
-      <div className="genre">
-      {data.genres.map((genre) => {
-        console.log("genre data ",data)
-        return <Filters key={genre._id}
-          type={genre.type}
-        />
-      })}
-      </div>
-    );
-  }

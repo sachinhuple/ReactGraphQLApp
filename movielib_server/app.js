@@ -23,7 +23,7 @@ app.use('/graphql', graphqlHTTP({
 }))
 
 // connect to our MongoDB server.
-mongoose.connect(`mongodb+srv://admin:admin@cluster1.xjexi.mongodb.net/movielib?retryWrites=true&w=majority`
+mongoose.connect(`mongodb+srv://admin:sachin@cluster0.xjexi.mongodb.net/movielib?retryWrites=true&w=majority`
 ).then(() => {
 
     app.listen(9000) // setup server to run on port 5000
